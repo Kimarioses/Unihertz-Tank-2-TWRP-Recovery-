@@ -1,0 +1,157 @@
+# twrp.fstab for TANK2 by mct_@xda
+##############################
+# Emmc partitions
+##############
+#
+/persist emmc /dev/block/by-name/persist flags=slotselect;display="Persist * image";backup=1;flashimg=1
+#
+/proinfo emmc /dev/block/by-name/proinfo flags=slotselect;display="ProInfo * image";backup=1;flashimg=1
+#
+/protect1 emmc /dev/block/by-name/protect1 flags=slotselect;display="Protect1 * image";backup=1;flashimg=1
+#
+/protect2 emmc /dev/block/by-name/protect2 flags=slotselect;display="Protect2 * image";backup=1;flashimg=1
+#
+/nvdata emmc /dev/block/by-name/nvdata flags=slotselect;display="NvData * image";backup=1;flashimg=1
+#
+/nvcfg emmc /dev/block/by-name/nvcfg flags=slotselect;display="NvCFG * image";backup=1;flashimg=1
+#
+/nvram emmc /dev/block/by-name/nvram flags=slotselect;display="NvRam * image";backup=1;flashimg=1
+#
+/tee_a emmc /dev/block/by-name/tee_a flags=slotselect;display="TEE_a * image";backup=1;flashimg=1
+#
+/tee_b emmc /dev/block/by-name/tee_b flags=slotselect;display="TEE_b * image";backup=1;flashimg=1
+#
+/frp emmc /dev/block/by-name/frp flags=slotselect;display="FRP * image";backup=1;flashimg=1
+#
+/otp emmc /dev/block/by-name/otp flags=slotselect;display="OTP * image";backup=1;flashimg=1
+#
+/para emmc /dev/block/by-name/para flags=slotselect;display="Para * image";backup=1;flashimg=1
+#
+/logo emmc /dev/block/by-name/logo flags=slotselect;display="Logo * image";backup=1;flashimg=1
+#
+/expdb emmc /dev/block/by-name/expdb flags=slotselect;display="EXODB * image";backup=1;flashimg=1
+#
+/boot_para emmc /dev/block/by-name/boot_pa flags=slotselect;display="Boot_Para * image";backup=1;flashimg=1
+#
+/mcupm_a emmc /dev/block/by-name/mcupm_a flags=slotselect;display="MCUPM_a image";backup=1;flashimg=1
+#
+/mcupm_b emmc /dev/block/by-name/mcupm_b flags=slotselect;display="MCUPM_b image";backup=1;flashimg=1
+#
+/md1img_a emmc /dev/block/by-name/md1img_a flags=slotselect;display="Md1Img_a image";backup=1;flashimg=1
+#
+/md1img_b emmc /dev/block/by-name/md1img_b flags=slotselect;display="Md1Img_b image";backup=1;flashimg=1
+#
+/init_boot_a emmc /dev/block/by-name/init_boot_a flags=slotselect;display="Init_boot_a image";backup=1;flashimg=1
+#
+/init_boot_b emmc /dev/block/by-name/init_boot_b flags=slotselect;display="Init_boot_b image";backup=1;flashimg=1
+#
+/dpm_a emmc /dev/block/by-name/dpm_a flags=slotselect;display="DPM_a image";backup=1;flashimg=1
+#
+/dpm_b emmc /dev/block/by-name/dpm_b flags=slotselect;display="DPM_b image";backup=1;flashimg=1
+#
+/lk_a emmc /dev/block/by-name/lk_a flags=slotselect;display="Lk_a image";backup=1;flashimg=1
+#
+/lk_b emmc /dev/block/by-name/lk_b flags=slotselect;display="Lk_b image";backup=1;flashimg=1
+#
+/boot_a emmc /dev/block/by-name/boot_a flags=slotselect;display="Boot_a image";backup=1;flashimg=1
+#
+/boot_b emmc /dev/block/by-name/boot_b flags=slotselect;display="Boot_b image";backup=1;flashimg=1
+#
+/pi_img_a emmc /dev/block/by-name/pi_img_a flags=slotselect;display="Pi_img_a image";backup=1;flashimg=1
+#
+/pi_img_b emmc /dev/block/by-name/pi_img_b flags=slotselect;display="Pi_img_b image";backup=1;flashimg=1
+#
+/dtbo_a emmc /dev/block/by-name/dtbo_a flags=slotselect;display="DTBO_a image";backup=1;flashimg=1
+#
+/dtbo_b emmc /dev/block/by-name/dtbo_b flags=slotselect;display="DTBO_b image";backup=1;flashimg=1
+#
+/odm_dlkm_image_a emmc /dev/block/mapper/odm_dlkm_a flags=slotselect;display="Odm_Dlkm_a Image";backup=1;flashimg=1
+#
+/odm_dlkm_image_b emmc /dev/block/mapper/odm_dlkm_b flags=slotselect;display="Odm_Dlkm_b Image";backup=1;flashimg=1
+#
+/spmfw_a emmc /dev/block/by-name/spmfw_a flags=slotselect;display="SecCFG_a image";backup=1;flashimg=1
+#
+/spmfw_b emmc /dev/block/by-name/spmfw_b flags=slotselect;display="SecCFG_b image";backup=1;flashimg=1
+#
+/scp_a emmc /dev/block/by-name/scp_a flags=slotselect;display="Scp_a image";backup=1;flashimg=1
+#
+/scp_b emmc /dev/block/by-name/scp_b flags=slotselect;display="Scp_b image";backup=1;flashimg=1
+#
+/sspm_a emmc /dev/block/by-name/sspm_a flags=slotselect;display="Sspm_a image";backup=1;flashimg=1
+#
+/sspm_b emmc /dev/block/by-name/sspm_b flags=slotselect;display="Sspm_b image";backup=1;flashimg=1
+#
+/connsys_bt_a emmc /dev/block/by-name/connsys_bt_a flags=slotselect;display="Connsys_bt_a image";backup=1;flashimg=1
+#
+/connsys_bt_b emmc /dev/block/by-name/connsys_bt_b flags=slotselect;display="Connsys_bt_b image";backup=1;flashimg=1
+#
+/connsys_gnss_a emmc /dev/block/by-name/connsys_gnss_a flags=slotselect;display="Connsys_Gnss_a image";backup=1;flashimg=1
+#
+/connsys_gnss_b emmc /dev/block/by-name/connsys_gnss_b flags=slotselect;display="Connsys_Gnss_b image";backup=1;flashimg=1
+#
+/connsys_wifi_a emmc /dev/block/by-name/connsys_wifi_a flags=slotselect;display="Connsys_wifi_a image";backup=1;flashimg=1
+#
+/connsys_wifi_b emmc /dev/block/by-name/connsys_wifi_b flags=slotselect;display="Connsys_wifi_b image";backup=1;flashimg=1
+#
+/gz_a emmc /dev/block/by-name/gz_a flags=slotselect;display="GZ_a image";backup=1;flashimg=1
+#
+/gz_b emmc /dev/block/by-name/gz_b flags=slotselect;display="GZ_b image";backup=1;flashimg=1
+#
+/sspm_a emmc /dev/block/by-name/sspm_a flags=slotselect;display="Sspm_a image";backup=1;flashimg=1
+#
+/sspm_b emmc /dev/block/by-name/sspm_b flags=slotselect;display="Sspm_b image";backup=1;flashimg=1
+#
+/vbmeta_a emmc /dev/block/by-name/vbmeta_a flags=slotselect;display="Vbmeta_a image";backup=1;flashimg=1
+#
+/vbmeta_b emmc /dev/block/by-name/vbmeta_b flags=slotselect;display="Vbmeta_b image";backup=1;flashimg=1
+#
+/vbmeta_vendor_a emmc /dev/block/by-name/vbmeta_vendor_a flags=slotselect;display="Vbmeta_Vendor_a image";backup=1;flashimg=1
+#
+/vbmeta_vendor_b emmc /dev/block/by-name/vbmeta_vendor_b flags=slotselect;display="Vbmeta_Vendor_b image";backup=1;flashimg=1
+#
+/vbmeta_system_a emmc /dev/block/by-name/vbmeta_system_a flags=slotselect;display="Vbmeta_System_a image";backup=1;flashimg=1
+#
+/vbmeta_system_b emmc /dev/block/by-name/vbmeta_system_b flags=slotselect;display="Vbmeta_System_b image";backup=1;flashimg=1
+#
+/vendor_boot_a emmc /dev/block/by-name/vendor_boot_a flags=slotselect;display="Vendor_Boot_a image";backup=1;flashimg=1
+#
+/vendor_boot_b emmc /dev/block/by-name/vendor_boot_b flags=slotselect;display="Vendor_Boot_b image";backup=1;flashimg=1
+#
+/vendor_dlkm_imge_a emmc /dev/block/mapper/vendor_dlkm_a flags=slotselect;display="Vendor_Dlkm Image";backup=1;flashimg=1
+#
+/vendor_dlkm_imge_b emmc /dev/block/mapper/vendor_dlkm_b flags=slotselect;display="Vendor_Dlkm_b Image";backup=1;flashimg=1
+#
+#/super_emmc emmc /dev/block/by-name/super flags=slotselect;display="Super image";backup=1;flashimg=1
+#
+/preloader_raw_a emmc /dev/block/mapper/pl_a flags=slotselect;display="Preloader_raw_a image";backup=1;flashimg=1
+#
+/preloader_raw_b emmc /dev/block/mapper/pl_b flags=slotselect;display="Preloader_raw_b image";backup=1;flashimg=1
+#
+/flashinfo emmc /dev/block/by-name/flashinfo flags=slotselect;display="FlashInfo image";backup=1;flashimg=1
+#
+/sec1 emmc /dev/block/by-name/sec1 flags=slotselect;display="Sec1 image";backup=1;flashimg=1
+#
+/sda emmc /dev/block/sda flags=slotselect;display="SDA image";backup=1;flashimg=1
+#
+/sdb emmc /dev/block/sdb flags=slotselect;display="SDB image";backup=1;flashimg=1
+#
+/metadata emmc /dev/block/by-name/metadata flags=slotselect;display="MetaData image";backup=1;flashimg=1
+#
+/userdata emmc /dev/block/by-name/userdata flags=slotselect;display="UserData image";backup=1;flashimg=1
+#
+/product_image_a emmc /dev/block/mapper/product_a flags=slotselect;display="Product_a image";backup=1;flashimg=1
+#
+/product_image_b emmc /dev/block/mapper/product_b flags=slotselect;display="Product_b image";backup=1;flashimg=1
+#
+/system_image_a emmc /dev/block/mapper/system_a flags=slotselect;display="System_a image";backup=1;flashimg=1
+#
+/system_image_b emmc /dev/block/mapper/system_b flags=slotselect;display="System_b image";backup=1;flashimg=1
+#
+/vendor_image_a emmc /dev/block/mapper/vendor_a flags=slotselect;display="Vendor_a image";backup=1;flashimg=1
+#
+/vendor_image_b emmc /dev/block/mapper/vendor_b flags=slotselect;display="Vendor_b image";backup=1;flashimg=1
+
+########################################################
+
+/data               f2fs      /dev/block/by-name/userdata      flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity;mounttodecrypt;fsflags=rw
+
