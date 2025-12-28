@@ -61,12 +61,12 @@ BOARD_SUPER_PARTITION_GROUPS := main
 BOARD_MAIN_SIZE := $(shell expr $(BOARD_SUPER_PARTITION_SIZE) - 4194304 )
 BOARD_MAIN_PARTITION_LIST := \
     system \
-    odm_dlkm \
-    product \
-    vendor_dlkm \
-    system_ext \
     vendor \
-    system_dlkm \
+    product \
+    system_ext \
+    odm \
+    vendor_dlkm \
+    odm_dlkm
 
 # File System
 BOARD_HAS_LARGE_FILESYSTEM := true
